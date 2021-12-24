@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,12 +10,12 @@ public class Boss
 
     public void Attack()
     {
-        Debug.Log(power + "ƒ_ƒ[ƒW‚ğ—^‚¦‚½");
+        Debug.Log(power + "ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’ä¸ãˆãŸ");
     }
 
     public void Defence(int damage)
     {
-        Debug.Log(damage + "‚Ìƒ_ƒ[ƒW‚ğó‚¯‚½");
+        Debug.Log(damage + "ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãŸ");
         hp -= damage;
     }
 
@@ -24,13 +24,13 @@ public class Boss
         if(mp >= 5)
         { 
             mp -= magic;
-            Debug.Log("–‚–@UŒ‚‚ğ‚µ‚½B@c‚èMP‚Í" + mp);
+            Debug.Log("é­”æ³•æ”»æ’ƒã‚’ã—ãŸã€‚ã€€æ®‹ã‚ŠMPã¯" + mp);
             
 
         }
         else
         {
-            Debug.Log("MP‚ª‘«‚è‚È‚¢‚½‚ßA–‚–@‚ªg‚¦‚È‚¢");
+            Debug.Log("MPãŒè¶³ã‚Šãªã„ãŸã‚ã€é­”æ³•ãŒä½¿ãˆãªã„");
         }
     }
 }
@@ -51,14 +51,14 @@ public class Test : MonoBehaviour
             lastboss.Magic(i);
         }
 
-        //”z—ñ‚Ì‰Û‘è
+        //é…åˆ—ã®èª²é¡Œ
         int[] array = { 1, 2, 3, 4, 5 };
 
         for(int i = 0; i < array.Length; i++)
         {
             Debug.Log(array[i]);
         }
-        for(int i = array.Length - 1; 0<= 1; i--)
+        for(int i = array.Length - 1; i >= 0; i--)
         {
             Debug.Log(array[i]);
         }
